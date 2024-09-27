@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My website work</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background: url("https://plus.unsplash.com/premium_photo-1683121710572-7723bd2e235d?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            position: sticky;
+            top: 0%;
+            height: 70%;
+            cursor: pointer;
+        }
+
+        .navlist {
+            display: flex;
+            align-items: center;
+            width: 70%;
+        }
+
+        .img {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .img img {
+            width: 30%;
+            border: 2px solid black;
+            border-style: double;
+            border-radius: 30px;
+            margin: 2px;
+        }
+
+        .navlist li {
+            list-style: none;
+            padding: 10px 30px;
+        }
+
+        .navlist li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.1rem;
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+        .navlist li a:hover{
+            background-color: aliceblue;
+            color: black;
+            padding:3px 5px;
+            border-radius: 7px;
+        }
+
+        .background {
+            background: rgba(0, 0, 0, 0.5) url("https://cdn.pixabay.com/photo/2024/09/05/08/24/mountain-9024209_1280.jpg");
+            background-size: cover;
+            background-blend-mode: darken;
+        }
+
+        .rightnav {
+            width: 30%;
+            text-align: center;
+        }
+
+        #search {
+            padding: 5px;
+            font-size: 13px;
+            border: 2px solid black;
+            border-radius: 9px;
+            text-align: center;
+        }
+
+        .btn1{
+            padding: 2px 15px;
+            background: none;
+            border: 4px solid rgb(255, 255, 255);
+            border-style: double;
+            border-radius: 10px;
+            color: white;
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+        .firstsection{
+            height:70vh;
+        }
+        .firsthalf{
+            width:90%;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: transparent;
+            backdrop-filter: blur(30px);
+            margin-top:120px;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 30px;
+            padding:20px;
+            border-radius: 30px;
+
+        }
+        .secondhalf {
+            width: 30%;
+            margin-top: 10%;
+        }
+
+        .secondhalf img {
+            width: 160px;
+            height: 160px;
+            border-radius: 300px;
+            border: 3px solid white;
+            display: block;
+            margin: auto;
+        }
+        .box-main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            /* font-family: "Poppins", sans-serif; */
+            max-width: 50%;
+            margin: auto;
+            height: 65%;
+        }
+        .Text-big{
+            font-size: 1.8rem;
+            font-weight: bold;
+            font-family: "Roboto", sans-serif;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            padding:2px 0px;
+        }
+        .Text-small{
+            font-size: 1.1rem;
+            font-family:"Roboto", sans-serif; 
+            line-height: 1.5rem;
+            text-align: justify;
+        }
+        .buttons a{
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .btn{
+            background: none;
+            text-align: center;
+            font-family: "Roboto", sans-serif;
+            font-size: 1rem;
+            padding:5px 10px;
+            border: 2px solid white;
+            border-style: dashed;
+            color: white;
+            margin-left: 6px;
+            border-radius:10px;
+            font-weight: bold;
+        }
+        .btn:hover{
+            background-color: white;
+            color: black;
+        }
+        @media only screen and (max-width:1287px){
+            .Text-big{
+                font-size: 1.5rem;
+            }
+            .Text-small{
+                font-size: 1rem;
+            }
+        }
+        @media only screen and (max-width:1149px){
+            .Text-big{
+                font-size: 1.2rem;
+            }
+            .Text-small{
+                font-size: 0.8rem;
+            }
+        }
+        @media only screen and (max-width:1000px){
+            .Text-big{
+                font-size: .8rem;
+                margin-top: 5%;
+            }
+            .Text-small{
+                font-size: .5rem;
+                line-height: 1.2rem;
+            }
+            .secondhalf img{
+                margin:50px auto;
+            }
+            .firsthalf{
+                width:200%;
+                margin-top: 80px;
+                height: 50%;
+                justify-content:none ;
+            }
+            .buttons a{
+                margin-top:5px;
+                margin-bottom: 10px;
+            }
+            .btn{
+            background: none;
+            text-align: center;
+            font-family: "Roboto", sans-serif;
+            font-size: 0.5rem;
+            padding:2px 3px;
+            border: 2px solid white;
+            border-style: dashed;
+            color: white;
+            margin-left: 3px;
+            border-radius:10px;
+            font-weight: bold;
+        }
+        .box-main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            /* font-family: "Poppins", sans-serif; */
+            max-width: 80%;
+            margin: auto;
+            height: 80%;
+        }
+        .img {
+            width: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .img img {
+            width: 50%;
+            border: 2px solid black;
+            border-style: double;
+            border-radius: 30px;
+            margin: 2px;
+        }
+        .navbar{
+            height: 50%;
+        }
+        .navlist li{
+            padding:2px 5px;
+        }
+        .navlist li a{
+            font-size: .5rem;
+        }
+        #search {
+            padding: 2px;
+            font-size: 5px;
+            border: 2px solid black;
+            border-radius: 9px;
+            text-align: center;
+        }
+        .btn1{
+            padding:0px 0px;
+            background: none;
+            border: 2px solid rgb(255, 255, 255);
+            border-style: double;
+            border-radius: 2px;
+            color: white;
+            font-family: "Roboto", sans-serif;
+            font-weight: 100;
+            font-style: normal;
+            font-size: xx-small;
+        }
+        .secondhalf img {
+            width: 100px;
+            height: 100px;
+            border-radius: 300px;
+            border: 3px solid white;
+            display: block;
+            margin: auto;
+        }
+}
+    </style>
+</head>
+
+<body>
+    <nav class="navbar background">
+        <ul class="navlist">
+            <div class="img"><img
+                    src="https://ideogram.ai/assets/progressive-image/balanced/response/uftuCWB5T76Rh6vU88pwsg"
+                    alt="Error loading"></div>
+            <li><a href="#Home">HOME</a></li>
+            <li><a href="#About">ABOUT</a></li>
+            <li><a href="#Services">SERVICES</a></li>
+            <li><a href="#Contact">CONTACT US</a></li>
+        </ul>
+        <div class="rightnav">
+            <input type="text" name="search" id="search" placeholder="search this website">
+            <a href="https://ideogram.ai/g/0OzXI0ABQsOkd5NXJR2nbA/1" target="_blank"><button
+                    class="btn1">Search</button></a>
+        </div>
+    </nav>
+    <section class="firstsection" id="home">
+        <div class="box-main">
+            <div class="firsthalf">
+                <p class="Text-big">The Revolutionizing Technology</p>
+                <p class="Text-small">Here The introduction about the revlouting gaming technology Ar and Vr and This technology is our upcoming future and this technology is Revolutionizing in the gaming future </p>
+                <div class="buttons">
+                    <a href="https://www.t.edu.pk/" target="_blank"><button class="btn">Join Us</button></a>
+                    <a href="https://www.youtube.com/" target="_blank"><button class="btn">Watch Video</button></a>
+                </div>
+            </div>
+            <div class="secondhalf">
+                <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=1778&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="AI image">
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
